@@ -1,0 +1,49 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  max-height: 600px;
+  overflow: hidden;
+  flex-direction: column;
+
+  /* medium-and-up */
+  @media only screen and (min-width: 601px) {
+    flex-direction: row;
+  }
+}
+
+.heroTitle {
+  width: 100%;
+
+  /* medium-and-up */
+  @media only screen and (min-width: 601px) {
+    padding-right: 20px;
+    width: 49%;
+  }
+}
+
+.heroTiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  /* medium-and-up */
+  @media only screen and (min-width: 601px) {
+    justify-content: flex-end;
+    width: 49%;
+  }
+}
+
+.heroTileImage {
+  width: 32%;
+  padding: 5px;
+
+  /* medium-and-up */
+  @media only screen and (min-width: 601px) {
+    width: 49%;
+  }
+
+  /* large-and-up */
+  @media only screen and (min-width: 1051px) {
+    width: 32%;
+  }
+}
